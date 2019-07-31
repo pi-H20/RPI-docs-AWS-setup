@@ -5,11 +5,11 @@ AWS, along with all the services used to have the application talk to AWS in whi
 
 ## Authors
 
-Liz Mahoney
+Liz Mahoney, Jorie Fernandez, Jen Shin, Greg Chidrome
 
 # Table of contents
 
-- [Instructions to set up Rasberry Pi ](./SETUP_RPI_README.md) 
+- [Instructions to set up Raspberry Pi ](./SETUP_RPI_README.md) 
 - [Setup RPI with AWS IOT service](./IOT_README.md)
 - [Setup with AWS Systems Manager](./AWS_SM_README.md)
 - [Setup with AWS Lambda](./AWS_LAMBDA_README.md)
