@@ -1,6 +1,9 @@
 from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTShadowClient
 import RPi.GPIO as GPIO
 import time
+import water_once
+
+
 
 # A random programmatic shadow client ID.
 SHADOW_CLIENT = "myShadowClient"
@@ -64,6 +67,9 @@ while True:
         myDeviceShadow.shadowUpdate(
             '{"state":{"reported":{"moisture":"low"}}}',
             myShadowUpdateCallback, 5)
+        water_once.pump_on()
+
+
     else:
         print("Water Detected")
         myDeviceShadow.shadowUpdate(

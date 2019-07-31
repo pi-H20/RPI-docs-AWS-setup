@@ -1,46 +1,23 @@
-# Pi- H20 - Raspberry Pi with Python
+# AWS setup / Raspberry Pi Documentation
 
-This repo contains the Raspberry Pi setup and python scripts.
+This repo contains the code that lives in the Raspberry Pi (RPI), a step-by-step on how to setup RPI and connect to 
+AWS, along with all the services used to have the application talk to AWS in which AWS triggers the RPI.
 
-## Authors 
+## Authors
 
-Liz Mahoney, Jen Shin, Greg Chidrome, Jorie Fernandez
+Liz Mahoney
+
+# Table of contents
+
+- [Instructions to set up Rasberry Pi ](./SETUP_RPI_README.md) 
+- [Setup RPI with AWS IOT service](./IOT_README.md)
+- [Setup with AWS Systems Manager](./AWS_SM_README.md)
+- [Setup with AWS Lambda](./AWS_LAMBDA_README.md)
+- [Setup with AWS API Gateway](./AWS_API_GATEWAY_README.md)
+
+# RPI code
+- [Auto water on](./code/auto_water_on.py)
+- [Water once](./code/water_once.py)
 
 
-# Getting Started
-1. On local machine, create a directory: `mkdir python-h20`
-2. Go into the directory: `cd python-h20`, then clone this repo `git clone https://github.com/pi-H20/pi-python.git`
-3. Voila! You should see all the files in this repo on your machine.
 
-## Raspberry Pi Setup
-
-Steps 1...4 [TBD]
-
-## Write some code to turn the pump on from the command line
-***Note*** Before these next steps, the laptop can be able to ssh into Raspberry Pi to write any code!
-
-1. Make a directory called water and go into the water directory.
-
-2. To ensure the library is installed on the Raspberry pi, run: 
-
-`sudo python3 -m pip install RPi.GPI` 
-
-If successful, it shows the following: 
-
-```
-Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
-Requirement already satisfied: RPi.GPIO in /usr/lib/python3/dist-packages (0.6.5
-
-```
-
-3. Open and create a new file `vim water.py`
-4. After the file is done, it needs execute permissions, therefore run `chmod 777 water.py`
-5. To run the file: `python3 water.py`
-
-The pump should successfully run from the raspberry pi.
-
-6. To edit the file: `vim water.py`
-
-## Resources
-
-Water Plant Tutorial - http://www.cyber-omelette.com/2017/09/automated-plant-watering.html

@@ -1,7 +1,7 @@
 # IoT Documentation Setup
 
 This documentation tutorial provides the step-by-step setup to use AWS IoT services such as SMS - sending text 
-message,
+message
 
 # Author 
 
@@ -40,7 +40,7 @@ feature*** box, enter ***IoT Core***, and then press ***Enter***.
 
 4. In the service navigation pane, expand ***Secure***, and then choose ***Policies***.
 
-![Image of IoT policies](assets/console-secure-policies.png)
+![Image of IoT policies](assets/iot/console-secure-policies.png)
 
 5. If a ***You don’t have any policies*** yet dialog box appears, choose ***Create a policy***. Otherwise, choose Create.
 
@@ -56,7 +56,7 @@ feature*** box, enter ***IoT Core***, and then press ***Enter***.
 
 10. Choose ***Create***
 
-![Image Create Policy](assets/create-policy.png)
+![Image Create Policy](assets/iot/create-policy.png)
 
 ### Step 2: Create the Thing
 
@@ -69,7 +69,7 @@ record of all of the devices that are connected to your AWS account in AWS IoT .
 
 3. In the service navigation pane, with ***Manage*** expanded, choose ***Things***.
 
-![Image Console manage things](assets/console-manage-things.png)
+![Image Console manage things](assets/iot/console-manage-things.png)
                            
 4. If a ***You don’t have any things*** yet dialog box is displayed, choose ***Register a thing***. Otherwise, choose Create.
 
@@ -84,11 +84,11 @@ A device's shadow is a JSON document, stored in AWS IoT , that AWS IoT uses to s
 
 1. In the AWS IoT console, on the Things page, choose ***wateringPlant***.
 
-![Image Console Open Thing](assets/console-open-thing.png)
+![Image Console Open Thing](assets/iot/console-open-thing.png)
 
 2. Choose ***Interact***.
 
-![Image Console Open Thing](assets/console-interact.png)
+![Image Console Open Thing](assets/iot/console-interact.png)
 
 3. For MQTT, make a note of the value for each of the following MQTT topics, which enable you to set and get updates to
  the shadow:
@@ -99,7 +99,7 @@ A device's shadow is a JSON document, stored in AWS IoT , that AWS IoT uses to s
 
 - ***Get this device shadow accepted*** (for example, $aws/things/MyRPi/shadow/get/accepted)
 
-![Image Console Open Thing](assets/console-mqtt-topic-list.png)
+![Image Console Open Thing](assets/iot/console-mqtt-topic-list.png)
 
 4. Choose the back button.
 
@@ -107,12 +107,12 @@ A device's shadow is a JSON document, stored in AWS IoT , that AWS IoT uses to s
 
 6. In the service navigation pane, choose Test.
 
-![Image Console Test](assets/console-test.png)
+![Image Console Test](assets/iot/console-test.png)
 
 7. For ***Subscription topic***, enter the MQTT topic value that you noted in step 3 of this procedure for ***Update 
 to this device shadow*** (for example, ***$aws/things/MyRPi/shadow/update***), and then choose ***Subscribe to topic***.
 
-![Image Console Test](assets/console-subscribe-topic.png)
+![Image Console Test](assets/iot/console-subscribe-topic.png)
 
     ***Important!***
     If you named your thing something other than MyRPi, be sure to substitute your thing’s name for MyRPi 
@@ -151,7 +151,7 @@ pause your mouse over a truncated topic value to see its full value.
     
 12. Choose ***Publish to topic***.
 
-![Image Update Shadow](assets/console-update-shadow.png)
+![Image Update Shadow](assets/iot/console-update-shadow.png)
 
 13. To get that data from the shadow, choose the MQTT topic value for ***Get this device shadow*** (for example, 
 ***$aws/things/MyRPi/shadow/get***).
@@ -168,12 +168,12 @@ pause your mouse over a truncated topic value to see its full value.
     
 15. Choose ***Publish to topic***.
 
- ![Image Get Shadow](assets/console-get-shadow.png)
+ ![Image Get Shadow](assets/iot/console-get-shadow.png)
 
    A green dot is displayed next to the MQTT value for ***Get this device shadow accepted***. This 
     means that there is new information displayed for that MQTT topic.
     
-  ![Image Get Shadow Received](assets/console-get-shadow-received.png)
+  ![Image Get Shadow Received](assets/iot/console-get-shadow-received.png)
 
 16. Choose the MQTT topic value for ***Get this device shadow accepted*** (for example, 
 $aws/things/MyRPi/shadow/get/accepted), and note the output, for example:
@@ -261,7 +261,7 @@ In this step, you set up Amazon Simple Notification Service (Amazon SNS) to auto
 1. Create an AWS IoT rule to trigger the email alert through Amazon SNS. To do this, with the AWS IoT console open, in
  the service navigation pane, choose Act.
  
- ![Image Console Act](assets/console-act.png)
+ ![Image Console Act](assets/iot/console-act.png)
  
  2. If a ***You don’t have any rules yet*** dialog box appears, choose ***Create a rule***. Otherwise, choose ***Create***.
  
@@ -277,11 +277,11 @@ In this step, you set up Amazon Simple Notification Service (Amazon SNS) to auto
 ```
 SELECT * FROM '$aws/things/MyRPi/shadow/update/accepted' WHERE state.reported.moisture = 'low'
 ```
-### Step 11: Capture Data from the Soil Moisture Sensor Kit
+### Step 4: Capture Data from the Soil Moisture Sensor Kit
 
 1. Use an available code editor on the Raspberry Pi (for example, nano, IDLE, or vi) to create a file with the following code.
 
-To review ***moisture.py*** file click [here](./code/moisture.py)
+To review ***moisture.py*** file click [here](code/auto_water_on.py)
 
 2. Then run ***python3 moisture.py***
 
