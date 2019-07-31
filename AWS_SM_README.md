@@ -1,9 +1,9 @@
 # AWS Systems Manager Documentation
 
 This document contains a step by step setup with AWS Systems Manager. AWS EC2 Systems Manager (Systems Manager for short)
- is an agent based platform for configuring, controlling, and governing on premise servers from within the EC2 console. 
- By installing a Systems Manager agent on your server, you can execute commands remotely, ensure servers remain in 
- specific state, and enforce configuration management requirements.
+is an agent based platform for configuring, controlling, and governing on premise servers from within the EC2 console. 
+By installing a Systems Manager agent on your server, you can execute commands remotely, ensure servers remain in 
+specific state, and enforce configuration management requirements.
 
 ## Author
 
@@ -209,18 +209,6 @@ Liz Mahoney
 
 3. A ***Command status*** page should display with the Document running in progress, you can ***cancel command*** at 
 any time.
-    
-    
-      
-      
-
- 
-
- 
- 
-
- 
- 
  
 ## Resources
 
