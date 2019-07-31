@@ -1,3 +1,5 @@
+[Back](./README.md)
+
 # AWS Systems Manager Documentation
 
 This document contains a step by step setup with AWS Systems Manager. AWS EC2 Systems Manager (Systems Manager for short)
