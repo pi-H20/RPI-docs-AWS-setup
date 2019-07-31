@@ -1,4 +1,6 @@
-# pi-H20 - Raspberry Pi Setup with Python
+[Back](./README.md)
+
+# Raspberry Pi Setup with Python
 
 This repo contains the Raspberry Pi setup and python scripts.
 
