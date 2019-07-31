@@ -93,5 +93,5 @@ manager document to run the script on the raspberry pi.
 7. Repeat steps 2-6 for creating auto water off and water once lambda.
 
 ## Resources
-- [Using AWS Systems Manager](https://medium.com/@simonrand_43344/using-aws-simple-systems-manager-and-lambda-to-replace-cron-in-an-ec2-auto-scaling-group-939d114ec9d7)
+- [Using AWS Systems Manager with Lambda](https://medium.com/@simonrand_43344/using-aws-simple-systems-manager-and-lambda-to-replace-cron-in-an-ec2-auto-scaling-group-939d114ec9d7)
 
