@@ -29,7 +29,15 @@ Water Plant Tutorial - http://www.cyber-omelette.com/2017/09/automated-plant-wat
 
 ![GPIO Layout](assets/rpi/GPIO.jpg)
 
+Following this GPIO layout:
 
+Water Sensor -  plug the positive lead from the water sensor to pin 2, and the negative lead to pin 6. Plug the signal wire (yellow) to pin 8.
+
+Relay - Plug the positive lead from pin 7 to IN1 on the Relay Board. Also connect Pin 2 to VCC, and Pin 5 to GND on the Relay board.
+
+Pump - Connect your pump to a power source, run the black ground wire between slots B and C of relay module 1 (when the RPi sends a LOW signal of 0v to pin 1, this will close the circuit turning on the pump).
+
+This diagram should capture the correct GPIO so long as you are using Raspberry Pi 3. Not shown is another power source to the RPi.
 
 
 ## Write some code to turn the pump on from the command line
@@ -50,7 +58,7 @@ Requirement already satisfied: RPi.GPIO in /usr/lib/python3/dist-packages (0.6.5
 ```
 
 3. Open and create a new file `vim water.py`
-4. # After the file is done, it needs execute permissions, therefore run `chmod 777 water.py`
+4. After the file is done, it needs execute permissions, therefore run `chmod 777 water.py`
 5. To run the file: `python3 water.py`
 
 The pump should successfully run from the raspberry pi.
@@ -61,3 +69,7 @@ The pump should successfully run from the raspberry pi.
 
 ***Water Plant Tutorial***
 http://www.cyber-omelette.com/2017/09/automated-plant-watering.html
+
+
+
+[Back](./README.md)

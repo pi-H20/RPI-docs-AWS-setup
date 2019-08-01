@@ -97,3 +97,5 @@ manager document to run the script on the raspberry pi.
 ## Resources
 - [Using AWS Systems Manager with Lambda](https://medium.com/@simonrand_43344/using-aws-simple-systems-manager-and-lambda-to-replace-cron-in-an-ec2-auto-scaling-group-939d114ec9d7)
 
+
+[Back](./README.md)
