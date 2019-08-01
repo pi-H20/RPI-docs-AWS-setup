@@ -31,6 +31,10 @@ Liz Mahoney, Jorie Fernandez, Jen Shin, Greg Chidrome
 - [Setup with AWS Lambda](./AWS_LAMBDA_README.md)
 - [Setup with AWS API Gateway](./AWS_API_GATEWAY_README.md)
 
+# AWS Service-related Issue
+- AWS SMS failed to send text messages -> known service bug 
+
+
 # RPI code
 - [Auto water on](./code/auto_water_on.py)
 - [Water once](./code/water_once.py)
