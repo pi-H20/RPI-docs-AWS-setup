@@ -5,7 +5,6 @@
 This repo contains the Raspberry Pi setup and python scripts.
 
 ## Authors 
-
 Liz Mahoney, Jen Shin, Greg Chidrome, Jorie Fernandez
 
 
@@ -17,6 +16,21 @@ Liz Mahoney, Jen Shin, Greg Chidrome, Jorie Fernandez
 ## Raspberry Pi Setup
 
 Water Plant Tutorial - http://www.cyber-omelette.com/2017/09/automated-plant-watering.html
+
+### Materials
+- rpi 3b+
+- water pump
+- 2 channel relay
+- moisture sensor
+- 5v power supply
+- clear water tube
+
+### GPIO Layout
+
+![GPIO Layout](assets/rpi/GPIO.jpg)
+
+
+
 
 ## Write some code to turn the pump on from the command line
 ***Note*** Before these next steps, the laptop can be able to ssh into Raspberry Pi to write any code!

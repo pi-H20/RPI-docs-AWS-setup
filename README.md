@@ -7,6 +7,22 @@ AWS, along with all the services used to have the application talk to AWS in whi
 
 Liz Mahoney, Jorie Fernandez, Jen Shin, Greg Chidrome
 
+## Architectural Design
+
+![Architectural Design](assets/RPI_design.png)
+
+- React - Frontend application
+- Elastic Beanstalk - Deployed application is stored in elastic beanstalk
+- Amazon API Gateway - Routes to call auto on, auto off, and water once 
+- AWS Lambda - Invokes systems manager to trigger the RPI
+- AWS Systems Manager - Registers a RPI to control the Pi 
+- Raspberry Pi - The device to water the plant
+- AWS IoT Core - IoT Core is a managed cloud service that lets connected devices easily and securely interact with cloud applications and other devices
+    - AWS DynamoDB - RPI sends data to DynamoDB to store low moisture data.
+    - AWS SES - The subscribed user will receive a low moisture email notification
+    - AWS SMS - The subscribed user will receive a low moisture text message notification
+    
+
 # Table of contents
 
 - [Instructions to set up Raspberry Pi ](./SETUP_RPI_README.md) 
