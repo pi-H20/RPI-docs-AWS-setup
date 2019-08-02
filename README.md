@@ -5,7 +5,7 @@ AWS, along with all the services used to have the application talk to AWS in whi
 
 ## Authors
 
-Liz Mahoney, Jorie Fernandez, Jen Shin, Greg Chidrome
+Liz Mahoney, Jorie Fernandez, Jen Shin, Paolo Chidrome
 
 ## Architectural Design
 
